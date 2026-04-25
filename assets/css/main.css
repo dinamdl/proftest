@@ -176,12 +176,24 @@ h6 {
   transform: scale(20);
 }
 
-.blue {
+/* .blue {
   height: 5px;
   background-color: #0B4F8A;
   margin: 30px 0;
   border-radius: 3px;
+} */
+
+
+.blue {
+  height: 6px;
+  margin: 30px 0;
+
+  background: radial-gradient(circle, #0B4F8A 2px, transparent 3px);
+  background-size: 10px 6px;
+  background-repeat: repeat-x;
 }
+
+
 
 @keyframes pulsate-play-btn {
   0% {
