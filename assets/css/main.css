@@ -176,12 +176,7 @@ h6 {
   transform: scale(20);
 }
 
-/* .blue {
-  height: 5px;
-  background-color: #0B4F8A;
-  margin: 30px 0;
-  border-radius: 3px;
-} */
+
 
 
 .blue {
@@ -192,6 +187,56 @@ h6 {
   background-size: 10px 6px;
   background-repeat: repeat-x;
 }
+
+
+
+
+
+/* new Icon */
+.iconbar {
+  position: fixed;
+  top: 350px;
+  right: 0;
+  text-align: right;
+  width: 100px;
+  z-index: 100;
+  transform: translateX(0px);
+  transition: 1.5s all ease;
+}
+
+.iconbar .iconbar-1:first-child {
+  border-top-left-radius: 25px;
+}
+
+.iconbar .iconbar-1 {
+  background: #0077ad;
+  color: white;
+  margin-bottom: 3px;
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin-left: 15px;
+}
+
+.iconbar.iconbarHide {
+  transform: translateX(85px);
+}
+
+
+.iconbar .iconbarArrowRight,
+.iconbar .iconbarArrowLeft {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+
+
 
 
 
@@ -2313,9 +2358,9 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+/* .starter-section {
+ 
+} */
 
 /*--------------------------------------------------------------
 # Blog Posts Section
