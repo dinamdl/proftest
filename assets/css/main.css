@@ -181,6 +181,35 @@ h6 {
   color: #0B4F8A;
 }
 
+.section-divider {
+  margin: 80px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 60px;
+  position: relative;
+}
+
+
+.section-divider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #0d6efd, transparent);
+}
+
+
+.department-block {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 50px;
+  box-shadow: 6px 4px 15px 11px rgba(0, 0, 0, 0.05);
+}
+
+
 /* .line {
   border-bottom: 2px dashed #0B4F8A;
   width: 100%
