@@ -176,8 +176,15 @@ h6 {
   transform: scale(20);
 }
 
+.title {
+  font-size: 20px;
+  color: #0B4F8A;
+}
 
-
+/* .line {
+  border-bottom: 2px dashed #0B4F8A;
+  width: 100%
+} */
 
 .blue {
   height: 6px;
