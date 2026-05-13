@@ -2177,8 +2177,31 @@ section,
 
 .service-details .services-list a:hover {
   border-color: var(--accent-color);
+  color:#0B4F8A
 }
 
+/* my code */
+
+.service-details .services-list span {
+  display: block;
+  line-height: 1;
+  padding: 8px 0 8px 15px;
+  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  margin: 20px 0;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  transition: 0.3s;
+}
+
+.service-details .services-list span.active {
+  color: var(--heading-color);
+  font-weight: 700;
+  border-color: var(--accent-color);
+}
+
+.service-details .services-list span:hover {
+  border-color: var(--accent-color);
+  color:#0B4F8A
+}
 .service-details .services-img {
   margin-bottom: 20px;
 }
