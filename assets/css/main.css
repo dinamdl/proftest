@@ -225,8 +225,27 @@ h6 {
 }
 
 
+/* chat filter */
 
+.filter-btn {
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 30px;
+  background: #f1f1f1;
+  transition: 0.3s;
+  font-weight: 600;
+}
 
+.filter-btn:hover,
+.filter-btn.active {
+  background:  #0B4F8A;
+  color: white;
+}
+
+.team-item {
+  transition: 0.4s;
+}
 
 /* new Icon */
 .iconbar {
@@ -2177,7 +2196,7 @@ section,
 
 .service-details .services-list a:hover {
   border-color: var(--accent-color);
-  color:#0B4F8A
+  color: #0B4F8A
 }
 
 /* my code */
@@ -2200,8 +2219,9 @@ section,
 
 .service-details .services-list span:hover {
   border-color: var(--accent-color);
-  color:#0B4F8A
+  color: #0B4F8A
 }
+
 .service-details .services-img {
   margin-bottom: 20px;
 }
@@ -2214,7 +2234,7 @@ section,
 .service-details h4 {
   font-size: 20px;
   font-weight: 700;
-color: #0b4f8a
+  color: #0b4f8a
 }
 
 .service-details p {
