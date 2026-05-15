@@ -1024,7 +1024,14 @@ section,
   padding-bottom: 60px;
   position: relative;
 }
-
+#team .section-title h2{
+  color: red;
+  margin-top: 100px;
+}
+#team .section-title h2:after {
+  position: relative;
+  content: none;
+}
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
