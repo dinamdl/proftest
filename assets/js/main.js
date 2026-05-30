@@ -220,30 +220,33 @@
 
 // chat filter 
 
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const teamItems = document.querySelectorAll('.team-item');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const teamItems = document.querySelectorAll('.team-item');
 
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
 
-      // active button
-      filterButtons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
+    // active button
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
 
-      const filter = button.getAttribute('data-filter');
+    const filter = button.getAttribute('data-filter');
 
-      teamItems.forEach(item => {
+    teamItems.forEach(item => {
 
-        if (filter === 'all') {
+      if (filter === 'all') {
+        item.style.display = 'block';
+      } else {
+        if (item.classList.contains(filter)) {
           item.style.display = 'block';
         } else {
-          if (item.classList.contains(filter)) {
-            item.style.display = 'block';
-          } else {
-            item.style.display = 'none';
-          }
+          item.style.display = 'none';
         }
+      }
 
-      });
     });
   });
+});
+
+
+// my js for dializ active class

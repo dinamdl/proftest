@@ -2196,9 +2196,10 @@ section,
 }
 
 .service-details .services-list a.active {
-  color: var(--heading-color);
+  /* color: var(--heading-color); */
   font-weight: 700;
   border-color: var(--accent-color);
+  color: #0b4f8a;
 }
 
 .service-details .services-list a:hover {
