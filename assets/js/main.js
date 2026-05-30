@@ -249,4 +249,3 @@ filterButtons.forEach(button => {
 });
 
 
-// my js for dializ active class

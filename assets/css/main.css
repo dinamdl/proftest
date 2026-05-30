@@ -239,7 +239,7 @@ h6 {
 
 .filter-btn:hover,
 .filter-btn.active {
-  background:  #0B4F8A;
+  background: #0B4F8A;
   color: white;
 }
 
@@ -290,8 +290,62 @@ h6 {
   cursor: pointer;
 }
 
+/* my code for footer  */
 
+.footer-contact .contact-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
 
+/* круг вокруг иконки */
+.footer-contact .icon-circle {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+/* иконка внутри */
+.footer-contact .icon-circle i {
+  font-size: 15px;
+}
+
+/* текст */
+.footer-contact .contact-line span:last-child {
+  color: rgba(255, 255, 255, 0.85);
+  transition: 0.3s;
+}
+
+/* hover эффект */
+.footer-contact .contact-line:hover .icon-circle {
+  background: #0d6efd;
+  transform: scale(1.1);
+}
+
+.footer-contact .contact-line:hover span:last-child {
+  color: #fff;
+}
+
+/* мобилка */
+@media (max-width: 768px) {
+  .footer-contact {
+    text-align: left !important;
+  }
+
+  .footer-contact .contact-line {
+    justify-content: flex-start;
+  }
+}
 
 
 
@@ -1024,14 +1078,17 @@ section,
   padding-bottom: 60px;
   position: relative;
 }
-#team .section-title h2{
+
+#team .section-title h2 {
   color: red;
   margin-top: 100px;
 }
+
 #team .section-title h2:after {
   position: relative;
   content: none;
 }
+
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
@@ -2242,7 +2299,8 @@ section,
 .service-details h4 {
   font-size: 20px;
   font-weight: 700;
-  color: #0b4f8a
+  color: #0b4f8a;
+ margin-bottom: 30px;
 }
 
 .service-details p {
