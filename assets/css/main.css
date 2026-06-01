@@ -247,6 +247,8 @@ h6 {
   transition: 0.4s;
 }
 
+
+
 /* new Icon */
 .iconbar {
   position: fixed;
@@ -303,8 +305,8 @@ h6 {
 
 /* круг вокруг иконки */
 .footer-contact .icon-circle {
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,7 +315,11 @@ h6 {
   color: #fff;
   transition: all 0.3s ease;
   flex-shrink: 0;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
+
+
 
 /* иконка внутри */
 .footer-contact .icon-circle i {
@@ -328,7 +334,8 @@ h6 {
 
 /* hover эффект */
 .footer-contact .contact-line:hover .icon-circle {
-  background: #0d6efd;
+  color: var(--default-color);
+  border-color: var(--default-color);
   transform: scale(1.1);
 }
 
@@ -661,14 +668,14 @@ h6 {
 
   .navmenu .dropdown .dropdown ul {
     top: 0;
-    left: -90%;
+    left: 95%;
     visibility: hidden;
   }
 
   .navmenu .dropdown .dropdown:hover>ul {
     opacity: 1;
     top: 0;
-    left: -100%;
+    left: 100%;
     visibility: visible;
   }
 }
@@ -854,6 +861,8 @@ h6 {
   color: var(--default-color);
   border-color: var(--default-color);
 }
+
+
 
 .footer h4 {
   font-size: 16px;
@@ -2300,7 +2309,7 @@ section,
   font-size: 20px;
   font-weight: 700;
   color: #0b4f8a;
- margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .service-details p {
