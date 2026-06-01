@@ -334,9 +334,7 @@ h6 {
 
 /* hover эффект */
 .footer-contact .contact-line:hover .icon-circle {
-  color: var(--default-color);
-  border-color: var(--default-color);
-  transform: scale(1.1);
+  c
 }
 
 .footer-contact .contact-line:hover span:last-child {
