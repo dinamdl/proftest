@@ -109,6 +109,14 @@ h6 {
   font-family: var(--heading-font);
 }
 
+
+
+/* my new size */
+․size{
+  font-size: 22px;
+  text-align: left;
+}
+
 /* Pulsating Play Button
 ------------------------------*/
 .pulsating-play-btn {
